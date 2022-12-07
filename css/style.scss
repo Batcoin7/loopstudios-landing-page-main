@@ -1,0 +1,112 @@
+
+$Mobile: 375px;
+$Desktop: 1440px;
+
+$White: hsl(0, 0%, 100%);
+$Black: hsl(0, 0%, 0%);
+$DarkGray: hsl(0, 0%, 55%);
+$VeryDarkGray: hsl(0, 0%, 41%);
+
+$Alata: 'Alata', sans-serif;
+$JosefinSans: 'Josefin Sans', sans-serif;
+
+* {
+    font-size: 15px;
+    font-family: $Alata;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: $Desktop;
+}
+
+a {
+    color: $White;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 80px;
+    font-family: $JosefinSans;
+}
+h2 {
+    font-size: 50px;
+    font-family: $JosefinSans;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1136px;
+}
+
+.header {
+    height: 650px;
+    background-image: url(../images/desktop/image-hero.jpg);
+    color: $White;
+
+    .navbar {
+        padding: 52px 0;
+        display: flex;
+        justify-content: space-between;
+
+        .nav-link a {
+            padding: 0px 11px;
+        }
+    }
+
+    .title {
+        border: 1px solid ;
+        margin: 52px 500px 52px 0;
+        padding: 32px 40px 32px 32px ;
+    }
+}
+
+.interactive {
+    margin-top: 80px;
+    padding-top: 80px;
+    height: 700px;
+
+    article {
+        background-color: $White;
+        position: relative;
+        width: 525px;
+        bottom: 300px;
+        left: 570px;
+        padding: 80px 0 0 80px;
+
+        h2 {
+            padding-bottom: 24px;
+        }
+        p {
+            line-height: 25px;
+            color: $DarkGray;
+        }
+    }
+}
+
+.title-creation {
+    display: flex;
+    justify-content: space-between;
+    padding: 48px 0;
+
+    button {
+        border: 2px solid $DarkGray;
+        border-radius: 2px;
+        background: $White;
+        padding: 0 40px;
+        letter-spacing: 6px;
+
+    }
+}
+
+.images-creation {
+    margin: 40px 0;
+    height: 935px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    
+}
